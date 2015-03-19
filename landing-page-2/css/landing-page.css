@@ -613,80 +613,6 @@ a:focus, a:active {
   width: 24px;
 }
 
-.btn-facebook {
-  border-color: #3b5998;
-  color: #3b5998;
-}
-.btn-facebook:hover, .btn-facebook:focus, .btn-facebook:active, .btn-facebook.active, .open > .btn-facebook.dropdown-toggle {
-  background-color: transparent;
-  color: #3b5998;
-  border-color: #3b5998;
-  opacity: 1;
-}
-.btn-facebook:disabled, .btn-facebook[disabled], .btn-facebook.disabled {
-  background-color: transparent;
-  border-color: #3b5998;
-}
-.btn-facebook.btn-fill {
-  color: white;
-  background-color: #3b5998;
-  opacity: 0.9;
-}
-.btn-facebook.btn-fill:hover, .btn-facebook.btn-fill:focus, .btn-facebook.btn-fill:active, .btn-facebook.btn-fill.active, .open > .btn-facebook.btn-fill.dropdown-toggle {
-  background-color: #3b5998;
-  color: white;
-  opacity: 1;
-}
-
-.btn-twitter {
-  border-color: #55acee;
-  color: #55acee;
-}
-.btn-twitter:hover, .btn-twitter:focus, .btn-twitter:active, .btn-twitter.active, .open > .btn-twitter.dropdown-toggle {
-  background-color: transparent;
-  color: #55acee;
-  border-color: #55acee;
-  opacity: 1;
-}
-.btn-twitter:disabled, .btn-twitter[disabled], .btn-twitter.disabled {
-  background-color: transparent;
-  border-color: #55acee;
-}
-.btn-twitter.btn-fill {
-  color: white;
-  background-color: #55acee;
-  opacity: 0.9;
-}
-.btn-twitter.btn-fill:hover, .btn-twitter.btn-fill:focus, .btn-twitter.btn-fill:active, .btn-twitter.btn-fill.active, .open > .btn-twitter.btn-fill.dropdown-toggle {
-  background-color: #55acee;
-  color: white;
-  opacity: 1;
-}
-
-.btn-pinterest {
-  border-color: #cc2127;
-  color: #cc2127;
-}
-.btn-pinterest:hover, .btn-pinterest:focus, .btn-pinterest:active, .btn-pinterest.active, .open > .btn-pinterest.dropdown-toggle {
-  background-color: transparent;
-  color: #cc2127;
-  border-color: #cc2127;
-  opacity: 1;
-}
-.btn-pinterest:disabled, .btn-pinterest[disabled], .btn-pinterest.disabled {
-  background-color: transparent;
-  border-color: #cc2127;
-}
-.btn-pinterest.btn-fill {
-  color: white;
-  background-color: #cc2127;
-  opacity: 0.9;
-}
-.btn-pinterest.btn-fill:hover, .btn-pinterest.btn-fill:focus, .btn-pinterest.btn-fill:active, .btn-pinterest.btn-fill.active, .open > .btn-pinterest.btn-fill.dropdown-toggle {
-  background-color: #cc2127;
-  color: white;
-  opacity: 1;
-}
 .border-top{
   border-top: 1px solid #e2e2e2;
 }
@@ -695,9 +621,7 @@ a:focus, a:active {
   width: 100%;
   position: relative;
   height: 100%;
- 
 }
-
 
 .landing-page p{
   margin-top: 30px;
@@ -986,13 +910,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
 
 .landing-page .parallax .description{
   text-align: center;
-  padding-top: 200px;
+  padding-top: 150px;
   color: white;
 }
 
 .landing-page .parallax .description h2 {
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   text-align: left;
+  font-weight: 800;
+  font-size: 40px;
 }
 
 .landing-page .parallax .description h3 {
