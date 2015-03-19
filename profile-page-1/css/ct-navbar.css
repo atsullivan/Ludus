@@ -121,10 +121,12 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     
 }
 .navbar .navbar-brand {
-    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 60px;
     margin-top: 13px;
     margin-bottom: 13px;
-    font-size: 20px;
 }
 .navbar-nav > li > a {
     margin: 6px 3px;
