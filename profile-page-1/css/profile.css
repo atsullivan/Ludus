@@ -24,3 +24,71 @@ pre.prettyprint{
 .com{
     color: #999;
 }
+
+.section {
+  padding: 30px 0;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.section-gray {
+  background-color: #EEEEEE;
+}
+
+.section-dark-gray {
+  background-color: #333333;
+}
+
+.section-white {
+  background-color: #FFFFFF;
+}
+
+.progress{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  background-color: #333333;
+  padding-bottom: 30px;
+}
+
+.goal-met {
+    display: inline-block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    /*background-color: rgb(197, 44, 102);*/
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+.amt {
+    display: block;
+    font-size: 55pt;
+    font-weight: 100;
+    line-height: 1;
+  }
+
+.amt .fa-caret-up {
+  font-size: 35px;
+  color: green;
+}
+
+.amt .fa-caret-down {
+  font-size: 35px;
+  color: red;
+}
+
+.amt .fa-caret-right {
+  font-size: 15px;
+  color: yellow;
+}
+
+.met {
+    display: block;
+    font-size: 15pt;
+    font-weight: 100;
+    line-height: 1;
+  }
+
+
+
