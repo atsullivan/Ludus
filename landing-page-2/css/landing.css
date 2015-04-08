@@ -84,9 +84,10 @@ a:focus, a:active {
 }
 
 .btn {
+  border-radius: 0!important;
   border-width: 2px;
   background-color: transparent;
-  font-weight: 400;
+  font-weight: 700!important;
   opacity: 0.8;
   filter: alpha(opacity=80);
   padding: 8px 16px;
@@ -748,6 +749,7 @@ a:focus, a:active {
     font-style: italic;
     font-size: 60px;
     color: #FFFFFF;
+    /*color: rgba(178, 178, 178, 0.5);*/
     line-height: 20px;
     float: left;
     margin-left: 10px;
@@ -755,6 +757,11 @@ a:focus, a:active {
     width: 50px;
     height: 50px;
 }
+.logo-container .brand:hover {
+  color: white;
+}
+
+
 .logo-container{
     margin-top: 10px;
 }

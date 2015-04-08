@@ -90,5 +90,9 @@ pre.prettyprint{
     line-height: 1;
   }
 
-
+.btn-invisible{
+  background-color: transparent;
+  font-size: 50px;
+  text-align: center;
+}
 
