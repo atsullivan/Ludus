@@ -96,3 +96,21 @@ pre.prettyprint{
   text-align: center;
 }
 
+.big-add{
+    border-color: #00A4E4;
+    color: #00A4E4;
+    border-radius: 0!important;
+    background-color: transparent;
+    font-weight: 700!important;
+    border-width: 2px;
+    font-size: 14px;
+    font-style: normal;
+    padding: 16px 60px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.big-add:hover{
+   border-color: #00A4E4;
+   color:  #00A4E4;
+}
+
