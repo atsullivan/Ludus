@@ -4,8 +4,8 @@
 * { 
 	margin: 0;
 	padding: 0px;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Reckoner Bold';
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-family: 'Reckoner Bold';*/
 } 
 body { 
 	background: #fff;
@@ -238,7 +238,7 @@ a:focus {
 }
 
 .nav-sidebar > .sidebar-brand {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Reckoner Bold';
     font-weight: 800;
     font-style: italic;
     height: 50px;
