@@ -270,6 +270,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .navbar:not(.navbar-transparent).navbar-ct-blue{
     background-color: #34ACDC;
     background-color: rgba(52, 172, 220, 0.98);
+    background-color: #00bbff;
 }
 .navbar:not(.navbar-transparent).navbar-ct-azzure{
     background-color: #5BCAFF;
