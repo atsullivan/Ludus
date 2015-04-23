@@ -121,12 +121,15 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     
 }
 .navbar .navbar-brand {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Reckoner Bold';
     font-weight: 800;
     font-style: italic;
     font-size: 60px;
     margin-top: 13px;
     margin-bottom: 13px;
+
+    border-color: #00A4E4;
+    border-width: 2px;
 }
 .navbar-nav > li > a {
     margin: 6px 3px;

@@ -745,6 +745,7 @@ a:focus, a:active {
 
 .logo-container .brand{
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Reckoner Bold';
     font-weight: 800;
     font-style: italic;
     font-size: 60px;
