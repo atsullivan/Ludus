@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Reckoner Bold";
+  src: url(../fonts/Reckoner_Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Reckoner";
+  src: url(../fonts/Reckoner.ttf) format("truetype");
+}
+
 body{
     
 }
@@ -121,7 +131,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     
 }
 .navbar .navbar-brand {
-    font-family: 'Reckoner Bold';
+    font-family: 'Reckoner';
     font-weight: 800;
     font-style: italic;
     font-size: 60px;

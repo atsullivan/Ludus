@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Reckoner Bold";
+  src: url(../fonts/Reckoner_Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Reckoner";
+  src: url(../fonts/Reckoner.ttf) format("truetype");
+}
 
 /*           Font Smoothing      */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, a, .td-name, td {
@@ -745,7 +754,7 @@ a:focus, a:active {
 
 .logo-container .brand{
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Reckoner Bold';
+    font-family: 'Reckoner';
     font-weight: 800;
     font-style: italic;
     font-size: 60px;
