@@ -634,6 +634,9 @@ a:focus, a:active {
   text-align: left;
   font-weight: 800;
   font-size: 40px;
+
+  /*font-family: 'REIS';
+  font-size: 60px;*/
 }
 
 .landing-page .parallax .description h3 {

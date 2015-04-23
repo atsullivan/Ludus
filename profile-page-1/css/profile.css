@@ -115,3 +115,16 @@ pre.prettyprint{
    background-color: #00A4E4;
 }
 
+.team {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.team:hover {
+  background: white;
+}
+
+.team a {
+  padding-right: 10px;
+  padding-left: 10px;
+}
