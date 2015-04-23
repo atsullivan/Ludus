@@ -111,6 +111,7 @@ pre.prettyprint{
 }
 .big-add:hover{
    border-color: #00A4E4;
-   color:  #00A4E4;
+   color: white;
+   background-color: #00A4E4;
 }
 
