@@ -115,16 +115,53 @@ pre.prettyprint{
    background-color: #00A4E4;
 }
 
-.team {
-  padding-top: 20px;
-  text-align: center;
+.goal-banner > img {
+  width: 100%;
 }
 
-.team:hover {
-  background: white;
+.card{
+        width: 100%;
+        /*min-height: 390px;*/
+        padding: 10px 30px;
+        border: 1px solid #DDDDDD;
+        border-radius: 10px;
+        margin-top: 30px;
+        text-align: center;
+   }
+.card:hover{
+  /*background: red;*/
 }
+.card .icon i{
+        font-size: 63px;
+        color: #9a9a9a;
+        width: 85px;
+        height: 85px;
+        line-height: 80px;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+   }/*#E01724*/
 
-.team a {
-  padding-right: 10px;
-  padding-left: 10px;
+.card.card-blue{ 
+      border-color: #CCE7F5;
+    }
+.card.card-blue .icon i{
+      color:#00bbff;
+    }
+    
+.card  h4{
+        font-weight: 500;
+        font-size: 28px;
+        /*margin: 30px 0 -15px;*/
+   }
+
+.card  p{
+        font-size: 16px;
+        line-height: 22px;
+        color: #777;
+   }
+.card .icons i {
+  font-size: 40px;
+  padding: 20px;
 }
