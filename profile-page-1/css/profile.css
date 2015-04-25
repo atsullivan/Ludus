@@ -43,6 +43,11 @@ pre.prettyprint{
   background-color: #FFFFFF;
 }
 
+.section-blue {
+  background-color: #00bbff;
+  background-color: #003366;
+}
+
 .progress{
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -168,4 +173,14 @@ pre.prettyprint{
 
 .add-goal-form{
   padding-top: 30px;
+}
+
+.imageAndText {position: relative;} 
+.imageAndText .col {position: absolute; z-index: 1; top: 0; left: 0; padding-left: 20%;}
+.imageAndText p {
+    font-family: 'Reckoner';
+    font-weight: 800;
+    font-style: italic;
+    font-size: 150px!important;
+    color: white;
 }
