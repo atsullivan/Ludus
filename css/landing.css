@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "Reckoner Bold";
-  src: url(../fonts/Reckoner_Bold.ttf) format("truetype");
-}
-
-@font-face {
   font-family: "Reckoner";
   src: url(../fonts/Reckoner.ttf) format("truetype");
 }
