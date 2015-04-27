@@ -58,53 +58,6 @@ pre.prettyprint{
   background-color: #003366;
 }
 
-.progress{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: white;
-  background-color: #333333;
-  padding-bottom: 30px;
-}
-
-.goal-met {
-    display: inline-block;
-    width: 100%;
-    color: rgb(255, 255, 255);
-    /*background-color: rgb(197, 44, 102);*/
-    padding: 5px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-.amt {
-    display: block;
-    font-size: 55pt;
-    font-weight: 100;
-    line-height: 1;
-  }
-
-.amt .fa-caret-up {
-  font-size: 35px;
-  color: green;
-}
-
-.amt .fa-caret-down {
-  font-size: 35px;
-  color: red;
-}
-
-.amt .fa-caret-right {
-  font-size: 15px;
-  color: yellow;
-}
-
-.met {
-    display: block;
-    font-size: 15pt;
-    font-weight: 100;
-    line-height: 1;
-  }
-
 .btn-invisible{
   background-color: transparent;
   font-size: 50px;
@@ -185,21 +138,27 @@ pre.prettyprint{
   padding-top: 30px;
 }
 
-.imageAndText {position: relative;} 
+.imageAndText {
+  position: relative;
+}
+
 .imageAndText .col {
   position: absolute; 
   z-index: 1; 
   top: 0; 
   left: 0; 
-  padding-left: 30%;
-  padding-top: 5%;
+ 
 }
+
 .imageAndText p {
-    font-family: 'REIS';
+    /*font-family: 'REIS';
     font-weight: 500;
-    font-style: italic;
+    font-style: italic;*/
     font-size: 250px!important;
     color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
 }
 
 .layer {
@@ -223,5 +182,9 @@ pre.prettyprint{
     font-weight: 800;
     font-style: italic;
     font-size: 50px;
+  color: white;
+}
+
+.footer-section p{
   color: white;
 }
