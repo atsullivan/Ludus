@@ -83,10 +83,6 @@ pre.prettyprint{
    background-color: #00A4E4;
 }
 
-.goal-banner > img {
-  width: 100%;
-}
-
 .card{
         width: 100%;
         /*min-height: 390px;*/
@@ -175,14 +171,6 @@ pre.prettyprint{
 .shape {
     width:100%;
     margin:0 auto;
-}
-
-.goal-banner2 h2 {
-  font-family: 'Reckoner';
-    font-weight: 800;
-    font-style: italic;
-    font-size: 50px;
-  color: white;
 }
 
 .footer-section p{
