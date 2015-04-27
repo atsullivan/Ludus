@@ -83,6 +83,15 @@ pre.prettyprint{
    background-color: #00A4E4;
 }
 
+.quote-box {
+  width: 100%;
+  min-height: 420px;
+  padding: 10px 30px;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  background-color: #003366;
+}
+
 .card{
         width: 100%;
         /*min-height: 390px;*/
