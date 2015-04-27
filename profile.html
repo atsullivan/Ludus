@@ -11,6 +11,7 @@
   <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
   <link href="css/ct-navbar.css" rel="stylesheet" />
   <link href="css/post.css" rel="stylesheet" />  
+  <link href='css/rotating-card.css' rel='stylesheet' />
 
   <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
   <script src="js/bootstrap.js" type="text/javascript"></script>
@@ -42,40 +43,35 @@
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                      <li>
-                          <a href="#log">
-                              <i class="pe-7s-note2">
-                              </i>
-                              <p>Log</p>
-                          </a>
-                      </li> 
-                      <li>
-                          <a href="#goals">
-                              <i class="pe-7s-stopwatch">
-                                  <span class="label">4</span>
-                              </i>
-                              <p>Goals</p>
-                          </a>
-                      </li> 
-                      <li>
-                          <a href="#profile">
-                              <i class="pe-7s-user">
-                              </i>
-                              <p>Profile</p>
-                          </a>
-                      </li>    
-                      
-                      <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                  <i class="pe-7s-config"></i>
-                                  <p>Settings</p>
-                              </a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">FAQ</a></li>
-                              <li class="divider"></li>
-                              <li><a href="landing.html">Log Out</a></li>
-                            </ul>
-                      </li>
+                    <li>
+                        <a href="#profile">
+                            <i class="pe-7s-user"></i>
+                            <p>Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#log">
+                            <i class="pe-7s-note2"></i>
+                            <p>Log</p>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="#goals">
+                            <i class="pe-7s-stopwatch"></i>
+                            <p>Goals</p>
+                        </a>
+                    </li>     
+                    <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="pe-7s-config"></i>
+                                <p>Settings</p>
+                            </a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a href="landing.html">Log Out</a></li>
+                          </ul>
+                    </li>
                  </ul>
                  <form class="navbar-form navbar-right navbar-search-form" role="search">                  
                    <div class="form-group">
@@ -97,21 +93,45 @@
   <section id="profile">
       <div class="section section-white">     
           <div class="container">
-              <div class="row">
-                  <div class="col-md-3">
-                    <img src="http://placehold.it/250x250" class="align-center img-responsive">
-                  </div>
-                  <div class="col-md-6">
-                    <h2>Athlete Name</h2>
-                    <h2>Age</h2>
-                    <h2>Weight</h2>
-                    <h2>Total Wods</h2>
-                    <h2>Completed Goals</h2>
-                    <h2>Open Goals</h2>
-                  </div>
-                  <div class="col-md-3"></div>
-              </div>
-          </div>
+            <div class="row">
+                 <div class="col-md-4">
+                     <div class="profile-card-container">
+                        <div class="profile-card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="img/rotating_card_thumb2.png"/>
+                                </div>
+                                <div class="user">
+                                    <img class="img-circle" src="img/p3.jpg"/>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">Athlete Name</h3>
+                                        <p class="age text-center">Age</p>
+                                        <h5><i class="pe-7s-map-marker"></i> Region</h5>
+                                        <h5><i class="pe-7s-box2"></i> Affiliate </h5>
+                                        <h5><i class="pe-7s-ribbon"></i> Level</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="back">
+                              <div class="content">
+                                  <div class="main">
+                                      <h4 class>Experince</h4>
+                                      <p>Description of experience with exercise</p>
+                                      <h4>Bio</h4>
+                                      <p>A biography of the athlete...</p>
+                                      <h4>Favorite Workout</h4>
+                                      <p>Workout name or description</p>
+                                  </div>
+                              </div>
+                          </div> 
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
       </div>
   </section>
 
