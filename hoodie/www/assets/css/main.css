@@ -1,0 +1,50 @@
+
+
+/* hide contents until we know if user is signed in or not */
+body .hoodie-account-signedin,
+body .hoodie-account-signedout,
+body .hoodie-account-error {
+  display: none;
+}
+
+html[data-hoodie-account-status=signedin]  .hoodie-account-signedin,
+html[data-hoodie-account-status=error]     .hoodie-account-error,
+html[data-hoodie-account-status=signedout] .hoodie-account-signedout {
+  display: block;
+}
+
+
+
+ul#todolist {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+#todolist li {
+  list-style-type: none;
+}
+
+#todolist li input[type=checkbox] {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+}
+
+#todolist li input[type=text] {
+  display:none
+}
+
+#todolist li.editing input[type=text] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#todolist li.editing label {
+  display: none;
+}
+
+#todolist li label {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
