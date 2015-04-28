@@ -13,20 +13,6 @@ function Todos($element) {
     return false;
   });
 
-  // Handle "inline editing" of a todo.
-  // $el.on('click', 'label', function() {
-  //   $(this).parent().parent().find('.editing').removeClass('editing');
-  //   $(this).parent().addClass('editing');
-  //   return false;
-  // });
-
-  // Handle updating of an "inline edited" todo.
-  // $el.on('keypress', 'input[type=text]', function(event) {
-  //   if (event.keyCode === 13) {
-  //     hoodie.store.update('todo', $(this).parent().data('id'), {title: event.target.value});
-  //   }
-  // });
-
   // Find index/position of a todo in collection.
   function getTodoItemIndexById(id) {
     for (var i = 0, len = collection.length; i < len; i++) {
@@ -86,6 +72,8 @@ function Todos($element) {
   };
 }
 
+
+
 // Instantiate Todos collection & view.
 var todos = new Todos($('#todolist'));
 
@@ -111,3 +99,101 @@ $('#addBut').on('click', function() {
   });
   $("#todoinput").val('');
 });
+
+// Wods Collection/View
+function Wods($element) {
+  var collection = [];
+  var $el = $element;
+
+  // Handle marking wod as "done"
+  $el.on('click', 'input[type=checkbox]', function() {
+    hoodie.store.remove('wod', $(this).parent().data('id'));
+    return false;
+  });
+
+  // Find index/position of a wod in collection.
+  function getWodIndexById(id) {
+    for (var i = 0, len = collection.length; i < len; i++) {
+      if (collection[i].id === id) {
+        return i;
+      }
+    }
+    return null;
+  }
+
+  function paint() {
+    $el.html('');
+    collection.sort(function(a, b) {
+      return ( a.createdAt > b.createdAt ) ? 1 : -1;
+    });
+    for (var i = 0, len = collection.length; i<len; i++) {
+      $el.append(
+        '<div class="col-md-3">' +
+            '<div class="card card-blue">' +
+              '<li data-id="' + collection[i].id + '">' + 
+                '<input type="checkbox">' +
+                
+                '<div class="text">' +
+                    '<p>' + collection[i].woddate + '</p>' +
+                    '<p>' + collection[i].wodtitle + '</p>' +
+                    '<p>' + collection[i].wodcontent + '</p>' +
+                    '<p>' + collection[i].wodcomments + '</p>' +
+                '</div>' +
+                
+              '</li>' +
+            '</div>' +
+        '</div>' 
+      );
+    }
+  }
+
+  this.add = function(wod) {
+    collection.push(wod);
+    paint();
+  };
+
+  this.update = function(wod) {
+    collection[getWodIndexById(wod.id)] = wod;
+    paint();
+  };
+
+  this.remove = function(wod) {
+    collection.splice(getWodIndexById(wod.id), 1);
+    paint();
+  };
+
+  this.clear = function() {
+    collection = [];
+    paint();
+  };
+}
+
+
+
+// Instantiate Wods collection & view.
+var wods = new Wods($('#wodlist'));
+
+// initial load of all wod items from the store
+hoodie.store.findAll('wod').then(function(allWods) {
+  allWods.forEach(wods.add);
+});
+
+// when a wod changes, update the UI.
+hoodie.store.on('wod:add', wods.add);
+hoodie.store.on('wod:update', wods.update);
+hoodie.store.on('wod:remove', wods.remove);
+// clear todos when user logs out,
+hoodie.account.on('signout', wods.clear);
+
+
+// handle creating a new wod
+$('#addWod').on('click', function() {
+  hoodie.store.add('wod', {
+  woddate: $("#woddate").val(),
+  wodtitle: $("#wodtitle").val(),
+  wodcontent: $("#wodcontent").val(),
+  wodcomments: $("#wodcomments").val()
+  });
+  $("#wodinput").val('');
+});
+
