@@ -53,3 +53,9 @@
 [Tue, 28 Apr 2015 01:08:30 GMT] [info] [<0.430.0>] 127.0.0.1 - - GET /user%2F8g0ox3b/_changes?since=1&include_docs=true&feed=normal 200
 [Tue, 28 Apr 2015 01:08:35 GMT] [info] [<0.373.0>] 127.0.0.1 - - GET /user%2F8g0ox3b/_changes?since=1&include_docs=true&feed=normal 200
 [Tue, 28 Apr 2015 01:08:40 GMT] [info] [<0.442.0>] 127.0.0.1 - - GET /user%2F8g0ox3b/_changes?since=1&include_docs=true&feed=normal 200
+[Tue, 28 Apr 2015 01:08:45 GMT] [info] [<0.424.0>] 127.0.0.1 - - GET /user%2F8g0ox3b/_changes?since=1&include_docs=true&feed=normal 200
+[Tue, 28 Apr 2015 01:08:50 GMT] [info] [<0.454.0>] 127.0.0.1 - - GET /user%2F8g0ox3b/_changes?since=1&include_docs=true&feed=normal 200
+[Tue, 28 Apr 2015 01:08:55 GMT] [info] [<0.460.0>] 127.0.0.1 - - GET /user%2F8g0ox3b/_changes?since=1&include_docs=true&feed=normal 200
+[Tue, 28 Apr 2015 01:09:00 GMT] [info] [<0.466.0>] 127.0.0.1 - - GET /user%2F8g0ox3b/_changes?since=1&include_docs=true&feed=normal 200
+[Tue, 28 Apr 2015 01:09:05 GMT] [info] [<0.472.0>] 127.0.0.1 - - GET /user%2F8g0ox3b/_changes?since=1&include_docs=true&feed=normal 200
+[Tue, 28 Apr 2015 01:09:10 GMT] [info] [<0.478.0>] 127.0.0.1 - - GET /user%2F8g0ox3b/_changes?since=1&include_docs=true&feed=normal 200
