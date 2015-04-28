@@ -94,6 +94,10 @@ pre.prettyprint{
    background-color: #00A4E4;
 }
 
+.btn-goal {
+  margin-top: 20px;
+}
+
 .card{
         width: 100%;
         /*min-height: 390px;*/
@@ -120,6 +124,7 @@ pre.prettyprint{
 
 .card.card-blue{ 
       border-color: #CCE7F5;
+      min-height: 360px;
     }
 .card.card-blue .icon i{
       color:#00bbff;
