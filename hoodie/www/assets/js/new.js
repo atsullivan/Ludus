@@ -1,5 +1,4 @@
 "use strict";
-// initialize Hoodie
 var hoodie  = new Hoodie();
 
 // Todos Collection/View
@@ -14,18 +13,18 @@ function Todos($element) {
   });
 
   // Handle "inline editing" of a todo.
-  // $el.on('click', 'label', function() {
-  //   $(this).parent().parent().find('.editing').removeClass('editing');
-  //   $(this).parent().addClass('editing');
-  //   return false;
-  // });
+  $el.on('click', 'label', function() {
+    $(this).parent().parent().find('.editing').removeClass('editing');
+    $(this).parent().addClass('editing');
+    return false;
+  });
 
   // Handle updating of an "inline edited" todo.
-  // $el.on('keypress', 'input[type=text]', function(event) {
-  //   if (event.keyCode === 13) {
-  //     hoodie.store.update('todo', $(this).parent().data('id'), {title: event.target.value});
-  //   }
-  // });
+  $el.on('keypress', 'input[type=text]', function(event) {
+    if (event.keyCode === 13) {
+      hoodie.store.update('todo', $(this).parent().data('id'), {title: event.target.value});
+    }
+  });
 
   // Find index/position of a todo in collection.
   function getTodoItemIndexById(id) {
@@ -45,32 +44,8 @@ function Todos($element) {
     for (var i = 0, len = collection.length; i<len; i++) {
       $el.append(
         '<li data-id="' + collection[i].id + '">' +
-          '<input type="checkbox"> <label>'  + collection[i].goaltype + ' ' + collection[i].goaldate + ' ' + collection[i].goaldescription + '</label>' +
+          '<input type="checkbox"> <label>' + collection[i].priority + ' ' + collection[i].title + '</label>' +
           '<input type="text" value="' + collection[i].title + '"/>' +
-        '</li>'
-      );
-    }
-    for (var i = 0, len = collection.length; i<len; i++) {
-      $el.append(
-
-
-
-      '<li data-id="' + collection[i].id + '">' +
-        '<div class="col-md-3">' +
-            '<div class="card card-blue">' +                    
-                '<div class="icon">' +
-                    '<i class="pe-7s-gym"></i>' +
-                '</div>' +
-                '<div class="text">' +
-                    '<h4>' + collection[i].goaldescription + '</h4>' +
-                    '<p> Goal Date: ' + collection[i].goaldate + '</p>' +
-                '</div>' +
-                '<div class="icons">' +
-                  '<input type="checkbox">' +
-                  '<a href="#"><i class="pe-7s-check"></i></a>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
         '</li>'
       );
     }
@@ -113,12 +88,11 @@ hoodie.store.on('todo:remove', todos.remove);
 hoodie.account.on('signout', todos.clear);
 
 
-// handle creating a new task
+// handle creating a new vendor
 $('#addBut').on('click', function() {
   hoodie.store.add('todo', {
-  goaldate: $("#goaldate").val(),
-  goaldescription: $("#goaldescription").val(),
-  goaltype: $("#goaltype").val()
+  title: $("#todoinput").val(),
+  priority: $("#priorityinput").val()
   });
   $("#todoinput").val('');
 });

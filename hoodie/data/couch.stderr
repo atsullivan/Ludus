@@ -4,3 +4,18 @@ heart_beat_timeout = 11
 heart: Mon Apr 27 18:09:34 2015: Erlang has closed.
 bin/couchdb: line 343: echo: write error: Broken pipe
 heart: Mon Apr 27 18:09:34 2015: Executed "bin/couchdb -k" -> 256. Terminating.
+
+heart_beat_kill_pid = 36097
+heart_beat_timeout = 11
+heart: Tue Apr 28 10:59:53 2015: Erlang has closed.
+bin/couchdb: line 343: echo: write error: Broken pipe
+heart: Tue Apr 28 10:59:53 2015: Executed "bin/couchdb -k" -> 256. Terminating.
+
+heart_beat_kill_pid = 36730
+heart_beat_timeout = 11
+heart: Tue Apr 28 12:35:45 2015: heart-beat time-out, no activity for 1528 seconds
+bin/couchdb: line 343: echo: write error: Broken pipe
+heart: Tue Apr 28 12:35:48 2015: Executed "bin/couchdb -k" -> 256. Terminating.
+
+heart_beat_kill_pid = 37877
+heart_beat_timeout = 11
