@@ -1,5 +1,3 @@
-
-
 /* hide contents until we know if user is signed in or not */
 body .hoodie-account-signedin,
 body .hoodie-account-signedout,
@@ -12,8 +10,6 @@ html[data-hoodie-account-status=error]     .hoodie-account-error,
 html[data-hoodie-account-status=signedout] .hoodie-account-signedout {
   display: block;
 }
-
-
 
 ul#todolist {
   margin: 0 0 10px;

@@ -71,7 +71,7 @@
         case 'signin':
           $form = $.modalForm({
             fields: [ 'username', 'password' ],
-            submit: 'Sign in'
+            submit: 'Log in'
           });
           break;
         case 'resetpassword':

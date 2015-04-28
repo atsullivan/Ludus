@@ -178,8 +178,6 @@ function Wods($element) {
   };
 }
 
-
-
 // Instantiate Wods collection & view.
 var wods = new Wods($('#wodlist'));
 
@@ -192,7 +190,7 @@ hoodie.store.findAll('wod').then(function(allWods) {
 hoodie.store.on('wod:add', wods.add);
 hoodie.store.on('wod:update', wods.update);
 hoodie.store.on('wod:remove', wods.remove);
-// clear todos when user logs out,
+// clear wods when user logs out,
 hoodie.account.on('signout', wods.clear);
 
 
@@ -206,4 +204,3 @@ $('#addWod').on('click', function() {
   });
   $("#wodinput").val('');
 });
-
