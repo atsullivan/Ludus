@@ -69,6 +69,21 @@ pre.prettyprint{
   background-color: #003366;
 }
 
+.quote-box h2 {
+  font-family: 'REIS';
+  font-family: 'Lato';
+  color: white;
+  font-size: 80px;
+}
+
+.quote-box h3 {
+  font-family: 'Lato';
+  font-family: 'Farray';
+  font-size: 30px;
+  text-align: right;
+  padding-right: 30px;
+}
+
 .btn-invisible{
   background-color: transparent;
   font-size: 50px;

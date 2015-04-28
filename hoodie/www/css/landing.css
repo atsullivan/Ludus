@@ -626,6 +626,7 @@ a:focus, a:active {
 }
 
 .landing-page .parallax .description h3 {
+  color: white;
   text-align: right;
 }
 
