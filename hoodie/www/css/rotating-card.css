@@ -100,9 +100,21 @@
     margin: 5px 0;
     font-weight: 400;
     line-height: 20px;
+    text-align: center;
+    font-size: 30px;
 }
-.profile-card h4,  h3{
+.profile-card .front h3{
+    font-size: 50px!important;
+    padding-bottom: 20px;
+    font-family: "Ohmega Sans";
+}
+.profile-card h4{
     color: #00bbff;
+    font-family: "Baron Neue";
+    font-size: 35px; 
+}
+.profile-card p{
+    color: #003366;
 }
 .profile-card .profession{
     color: #999999;
