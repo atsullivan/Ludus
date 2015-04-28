@@ -42,22 +42,24 @@ function Todos($element) {
     collection.sort(function(a, b) {
       return ( a.createdAt > b.createdAt ) ? 1 : -1;
     });
+    // for (var i = 0, len = collection.length; i<len; i++) {
+    //   $el.append(
+    //     '<div class="col-md-3">' +
+    //       '<div class="card card-blue">' + 
+    //       '<li data-id="' + collection[i].id + '">' +
+    //         '<input type="checkbox"> <label>'  + collection[i].goaltype + ' ' + collection[i].goaldate + ' ' + collection[i].goaldescription + '</label>' +
+    //         '<input type="text" value="' + collection[i].title + '"/>' +
+    //       '</li>' +
+    //       '</div>' +
+    //     '</div>'
+    //   );
+    // }
     for (var i = 0, len = collection.length; i<len; i++) {
       $el.append(
-        '<li data-id="' + collection[i].id + '">' +
-          '<input type="checkbox"> <label>'  + collection[i].goaltype + ' ' + collection[i].goaldate + ' ' + collection[i].goaldescription + '</label>' +
-          '<input type="text" value="' + collection[i].title + '"/>' +
-        '</li>'
-      );
-    }
-    for (var i = 0, len = collection.length; i<len; i++) {
-      $el.append(
-
-
-
-      '<li data-id="' + collection[i].id + '">' +
         '<div class="col-md-3">' +
-            '<div class="card card-blue">' +                    
+            '<div class="card card-blue">' +
+              '<li data-id="' + collection[i].id + '">' + 
+                '<input type="checkbox">' +
                 '<div class="icon">' +
                     '<i class="pe-7s-gym"></i>' +
                 '</div>' +
@@ -66,12 +68,11 @@ function Todos($element) {
                     '<p> Goal Date: ' + collection[i].goaldate + '</p>' +
                 '</div>' +
                 '<div class="icons">' +
-                  '<input type="checkbox">' +
                   '<a href="#"><i class="pe-7s-check"></i></a>' +
                 '</div>' +
+              '</li>' +
             '</div>' +
-        '</div>' +
-        '</li>'
+        '</div>' 
       );
     }
   }
