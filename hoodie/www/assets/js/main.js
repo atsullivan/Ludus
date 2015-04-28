@@ -100,6 +100,8 @@ $('#addBut').on('click', function() {
   $("#todoinput").val('');
 });
 
+
+
 // Wods Collection/View
 function Wods($element) {
   var collection = [];
@@ -128,21 +130,29 @@ function Wods($element) {
     });
     for (var i = 0, len = collection.length; i<len; i++) {
       $el.append(
-        '<div class="col-md-3">' +
-            '<div class="card card-blue">' +
-              '<li data-id="' + collection[i].id + '">' + 
-                '<input type="checkbox">' +
-                
-                '<div class="text">' +
-                    '<p>' + collection[i].woddate + '</p>' +
-                    '<p>' + collection[i].wodtitle + '</p>' +
-                    '<p>' + collection[i].wodcontent + '</p>' +
-                    '<p>' + collection[i].wodcomments + '</p>' +
-                '</div>' +
-                
-              '</li>' +
-            '</div>' +
-        '</div>' 
+
+        '<li>' +
+        '<li data-id="' + collection[i].id + '">' + 
+        '<input type="checkbox">' +
+          '<time datetime="' + collection[i].woddate + '">'+
+            '<span class="day">14</span>' +
+            '<span class="month">Mar</span>' +
+            '<span class="year">2015</span>' +
+            '<span class="time">ALL DAY</span>' +
+          '</time>' +
+          '<div class="info">' +
+            '<h2 class="title">' + collection[i].wodtitle + '</h2>' +
+            '<p class="desc">' + collection[i].wodcontent + '</p>' +
+          '</div>' +
+          '<div class="social">' +
+            '<ul>' +
+              '<li class="expand" style="width:33%;"><a href="#"><span class="pe-7s-expand1"></span></a></li>' +
+              '<li class="edit" style="width:34%;"><a href="#"><span class="pe-7s-pen"></span></a></li>' +
+              '<li class="delete" style="width:33%;"><a href="#"><span class="pe-7s-close-circle"></span></a></li>' +
+            '</ul>' +
+          '</div>' +
+        '</li>' +
+        '</li>'
       );
     }
   }
