@@ -131,7 +131,6 @@ function Wods($element) {
     for (var i = 0, len = collection.length; i<len; i++) {
       $el.append(
 
-        '<li>' +
         '<li data-id="' + collection[i].id + '">' + 
         // '<input type="checkbox">' +
           '<time datetime="' + collection[i].woddate + '">'+
@@ -151,7 +150,6 @@ function Wods($element) {
               '<li class="delete" style="width:33%;"><a href="#"><span class="pe-7s-close-circle"></span></a></li>' +
             '</ul>' +
           '</div>' +
-        '</li>' +
         '</li>'
       );
     }
