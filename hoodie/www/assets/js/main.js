@@ -33,7 +33,7 @@ function Todos($element) {
         '<div class="col-md-3">' +
             '<div class="card card-blue">' +
               '<li data-id="' + collection[i].id + '">' + 
-                '<input type="checkbox">' +
+                // '<input type="checkbox">' +
                 '<div class="icon">' +
                     '<i class="pe-7s-' + collection[i].goaltype + '"></i>' +
                 '</div>' +
@@ -133,7 +133,7 @@ function Wods($element) {
 
         '<li>' +
         '<li data-id="' + collection[i].id + '">' + 
-        '<input type="checkbox">' +
+        // '<input type="checkbox">' +
           '<time datetime="' + collection[i].woddate + '">'+
             '<span class="day">14</span>' +
             '<span class="month">Mar</span>' +
