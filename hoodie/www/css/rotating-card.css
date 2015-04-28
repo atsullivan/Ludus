@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "Ohmega Sans";
+  src: url(../fonts/OhmegaSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Baron Neue";
+  src: url(../fonts/Baron-Neue.otf) format("truetype");
+}
+
+
 /* flip the pane when hovered */
 .profile-card-container:hover .profile-card, .profile-card-container.hover .profile-card {
     -webkit-transform: rotateY( 180deg );

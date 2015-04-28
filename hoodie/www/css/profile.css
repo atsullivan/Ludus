@@ -8,6 +8,11 @@
   src: url(../fonts/REIS-regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Farray";
+  src: url(../fonts/Farray.otf) format("truetype");
+}
+
 .space-100{
     height: 100px;
     display: block;
