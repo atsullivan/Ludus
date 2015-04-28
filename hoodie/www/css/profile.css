@@ -62,6 +62,14 @@ pre.prettyprint{
   background-color: #003366;
 }
 
+.section-tan {
+  background-color: #e5e5d8
+}
+
+.section-light-tan {
+  background-color: #f0efe4;
+}
+
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
@@ -87,6 +95,7 @@ pre.prettyprint{
   font-size: 30px;
   text-align: right;
   padding-right: 30px;
+  color: #00bbff;
 }
 
 .btn-invisible{
