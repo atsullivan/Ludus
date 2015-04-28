@@ -27,7 +27,7 @@
 .pe-7s-album:before {
 	content: "\e6aa";
 }
-.pe-7s-arc:before {
+.pe-7s-Skill:before {
 	content: "\e6ab";
 }
 .pe-7s-back-2:before {
@@ -51,7 +51,7 @@
 .pe-7s-female:before {
 	content: "\e6b2";
 }
-.pe-7s-gym:before {
+.pe-7s-Strength:before {
 	content: "\e6b3";
 }
 .pe-7s-hammer:before {
@@ -243,7 +243,7 @@
 .pe-7s-study:before {
 	content: "\e60f";
 }
-.pe-7s-stopwatch:before {
+.pe-7s-Time:before {
 	content: "\e610";
 }
 .pe-7s-star:before {

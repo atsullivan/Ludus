@@ -42,18 +42,6 @@ function Todos($element) {
     collection.sort(function(a, b) {
       return ( a.createdAt > b.createdAt ) ? 1 : -1;
     });
-    // for (var i = 0, len = collection.length; i<len; i++) {
-    //   $el.append(
-    //     '<div class="col-md-3">' +
-    //       '<div class="card card-blue">' + 
-    //       '<li data-id="' + collection[i].id + '">' +
-    //         '<input type="checkbox"> <label>'  + collection[i].goaltype + ' ' + collection[i].goaldate + ' ' + collection[i].goaldescription + '</label>' +
-    //         '<input type="text" value="' + collection[i].title + '"/>' +
-    //       '</li>' +
-    //       '</div>' +
-    //     '</div>'
-    //   );
-    // }
     for (var i = 0, len = collection.length; i<len; i++) {
       $el.append(
         '<div class="col-md-3">' +
@@ -61,7 +49,7 @@ function Todos($element) {
               '<li data-id="' + collection[i].id + '">' + 
                 '<input type="checkbox">' +
                 '<div class="icon">' +
-                    '<i class="pe-7s-gym"></i>' +
+                    '<i class="pe-7s-' + collection[i].goaltype + '"></i>' +
                 '</div>' +
                 '<div class="text">' +
                     '<h4>' + collection[i].goaldescription + '</h4>' +
